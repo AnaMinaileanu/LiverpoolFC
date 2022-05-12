@@ -8,30 +8,103 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
     </style>
+    <script src="home.js"></script>
 </head>
 <body>
     <header>
-        <div class="logonavbar">
-        <img src="favicon.ico.png" width="80" height="110">
-        <div class="navbar">
-            <a href="#news">NEWS</a>
-            <a href="#aboutus">ABOUT US</a>
-            <div class="dropdown">
-              <button class="dropbtn">FIXTURES
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">PREMIER LEAGUE</a>
-                <a href="#">CHAMPIONS LEAGUE</a>
-                <a href="#">FA CUP</a>
-                <a href="#">CARABAO CUP</a>
-              </div>
-            </div>
-            <a href="#theteam">THE TEAM</a>
-            <a href="#join" class="right">JOIN</a>
-            <a href="#login" class="right">LOGIN</a>           
-        </div>
-        </div>
+    
+
     </header>
+    <div class="logonavbar">
+      <img src="favicon.ico.png" width="80" height="110">
+      <div class="navbar">
+          <a href="#news">NEWS</a>
+          <a href="#aboutus">ABOUT US</a>
+          <div class="dropdown">
+            <button class="dropbtn">FIXTURES
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">PREMIER LEAGUE</a>
+              <a href="#">CHAMPIONS LEAGUE</a>
+              <a href="#">FA CUP</a>
+              <a href="#">CARABAO CUP</a>
+            </div>
+          </div>
+          <a href="#theteam">THE TEAM</a>
+          <a href="#join" class="right">JOIN</a>
+          <a href="#login" class="right">LOGIN</a>           
+      </div>
+      </div>
+
+      <div class="titleAndChant">
+          
+          <h1 id="title">Welcome to Liverpool FC Romania</h1>
+          <h1 id="chant">YOU'LL NEVER WALK ALONE</h1>
+        
+      </div>
+      <br>
+      <div class="img-slider">
+        <div class="slide active">
+          <img src="squad_photo.jpg" alt="">
+          <div class="caption">Our 2021/2022 squad</div>
+        </div>
+        <div class="slide">
+          <img src="alisson.jpg" alt="">
+          <div class="caption">The goal that sealed UCL football for us!</div>
+        </div>
+        <div class="slide">
+          <img src="imagine.jpg" alt="">
+          <div class="caption">No caption needed 9-0</div>
+        </div>
+        <div class="slide">
+          <img src="klopp_contract.jpg" alt="">
+          <div class="caption">The gaffer signs until 2026!!</div>
+        </div>
+        <div class="slide">
+          <img src="fa.jpg" alt="">
+          <div class="caption">FA Cup finalists!</div>
+        </div>
+        
+      </div>
+
+      <br>
+        <div class="navigation" style="text-align:center">
+          <div class="btn active"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+        </div>
+  
+      <script type="text/javascript">
+      var slides = document.querySelectorAll('.slide');
+      var btns = document.querySelectorAll('.btn');
+      let currentSlide = 1;
+  
+      // Javascript for image slider manual navigation
+      var manualNav = function(manual){
+        slides.forEach((slide) => {
+          slide.classList.remove('active');
+  
+          btns.forEach((btn) => {
+            btn.classList.remove('active');
+          });
+        });
+  
+        slides[manual].classList.add('active');
+        btns[manual].classList.add('active');
+      }
+  
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          manualNav(i);
+          currentSlide = i;
+        });
+      });
+
+      </script>
+
+      
 </body>
 </html>
