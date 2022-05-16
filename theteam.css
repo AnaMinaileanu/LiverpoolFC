@@ -1,0 +1,235 @@
+body {
+    background-color: #C8102E;
+}
+
+
+header> img{
+    flex: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    }
+    
+    
+    .logonavbar{
+        z-index:100;
+        display: flex;
+        position: sticky;
+        top: 0%;
+        background-color: #C8102E;
+        width: 100%;
+    }
+    
+    /* Navbar container */
+    .navbar {
+        
+        margin-top: auto;
+        margin-bottom: auto;
+        overflow: hidden;
+        background-color: #C8102E;
+        padding-left: 50px;
+        flex: 60%;
+        display: inline-block;
+      }
+      
+      /* Links inside the navbar */
+      .navbar a {
+        
+        float: left;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding:14px 20px 14px 20px;
+        text-decoration: none;
+        font-family: 'Koulen', cursive;
+        
+      }
+      .navbar a.right {
+        
+        float: right;
+        
+      }
+      /* The dropdown container */
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      /* Dropdown button */
+      .dropdown .dropbtn {
+        font-size: 20px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 20px 14px 20px;
+        background-color: inherit;
+        font-family: 'Koulen', cursive;
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+      
+      /* Add a red background color to navbar links on hover */
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #a32222;
+      }
+      
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    
+      @media screen and (max-width: 500px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .header-right {
+          float: none;
+        }
+      }
+
+
+      footer{
+        align-items: center;
+      }
+        
+      .tribute{
+                
+        display: flex;
+        justify-content: center;
+                
+      }
+        
+    #footercontent{
+        font-family: 'Koulen', cursive;
+        color: #f2f2f2;
+        font-size: 10px;
+        text-align: center;
+    }
+           
+
+    .position{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      margin-bottom: 15px;
+      margin-top: 15px;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #pagetitle{
+      font-family: 'Koulen', cursive;
+      color: #f2f2f2;
+      font-size: 65px;
+      text-align: center;
+    }
+
+    #positiontitle{
+      font-family: 'Koulen', cursive;
+      color: #f2f2f2;
+      font-size: 50px;
+      text-align: center;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+ 
+    .player{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+ 
+    .profile-card{
+      position: relative;
+      font-family: sans-serif;
+      width: 200px;
+      height: 200px;
+      background: none;
+      padding: 20px;
+      
+      transition: .6s;
+      margin: 20px 20px;
+    }
+
+    .profile-card:hover{
+      border-radius: 10px;
+      height: 230px;
+    }
+
+    .profile-card .img{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: .6s;
+      z-index: 99;
+    }
+ 
+    .img img{
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 0 30px #3336;
+      transition: .6s;
+    }
+
+    .profile-card:hover .img{
+      transform: translateY(-60px);
+    }
+ 
+    .profile-card:hover img{
+      border-radius: 10px;
+    }
+
+
+    .caption{
+      text-align: center;
+      transform: translateY(-80px);
+      opacity: 0;
+      transition: .6s;
+    }
+    .profile-card:hover .caption{
+      opacity: 1;
+    }
+    .caption h3{
+      font-size: 19px;
+      font-family: 'Koulen', cursive;
+      line-height: 95%;
+    }
+    .caption p{
+      font-size: 15px;
+      color: black;
+      font-family: sans-serif;
+      margin: 2px 0 9px 0;
+    }
+ 
+   
+
+    
