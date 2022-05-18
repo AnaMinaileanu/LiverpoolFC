@@ -129,7 +129,13 @@ header> img{
         
       }
 
+      .question{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
 
+     
       #answers{
         font-family: 'Koulen', cursive;
         color: #f2f2f2;
