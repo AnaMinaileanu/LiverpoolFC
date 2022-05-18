@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" /> 
+    <title>Liverpool FC Romania - The Team</title>
+    <link rel="stylesheet" type="text/css" href="join.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+    </style>
+    <script src="join.js"></script>
+</head>
+
+<body>
+
+    <div class="logonavbar">
+        <img src="favicon.ico.png" width="80" height="110">
+        <div class="navbar">
+            <a href="aboutus.html">ABOUT US</a>
+            <div class="dropdown">
+              <button class="dropbtn">FIXTURES
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">PREMIER LEAGUE</a>
+                <a href="#">CHAMPIONS LEAGUE</a>
+                <a href="#">FA CUP</a>
+                <a href="#">CARABAO CUP</a>
+              </div>
+            </div>
+            <a href="theteam.html">THE TEAM</a>
+            <a href="#join" class="right">JOIN</a>
+            <a href="#login" class="right">LOGIN</a>           
+        </div>
+        </div>
+        
+    <div class="forms">
+        <form>
+            <div class="form-field">
+                <label for="first-name">First Name</label><br>
+                <input name="first-name" id="first-name" type="text" placeholder="First Name">
+                <p class="warning">This is a required field.</p>
+            </div>
+            <div class="form-field">
+                <label for="last-name">Last Name</label><br>
+                <input name="last-name" id="last-name" type="text" placeholder="Last Name">
+                <p class="warning">This is a required field.</p>
+            </div>
+            <div class="form-field">
+                <label for="email">E-mail adress</label><br>
+                <input name="email" id="email" type="email" placeholder="E-mail adress">
+                <p class="warning">This is a required field.</p>
+                <p class="warning">This isn't a viable e-mail adress.</p>
+            </div>
+            <div class="form-field">
+                <label for="country">Country</label><br>
+                <input name="country" id="country" type="text" placeholder="Country">
+                <p class="warning">This is a required field.</p>
+            </div>
+            <div class="form-field">
+                <label for="city">City</label><br>
+                <input name="city" id="city" type="text" placeholder="City">
+                <p class="warning">This is a required field.</p>
+            </div>
+            <div class="form-field">
+                <label for="password">Password</label><br>
+                <input name="password" id="password" type="password" placeholder="Password">
+                <p class="warning">This is a required field.</p>
+            </div>
+            <!---
+            <div class="form-radio-field">
+                <div class="radio-container">
+                    <input type="radio" id="newsletter" name="newsletter" value="Weekly Newsletter">
+                    <label for="newsletter">Register to receive our weekly newsletter by e-mail</label>
+                </div>
+                <div class="radio-container">
+                    <input type="radio" id="nonewsletter" name="newsletter" value="No Weekly Newsletter">
+                    <label for="nonewsletter">Check our newsletter on the website, without e-mail updates</label>
+                </div>
+            </div>-->
+            <div class="form-field">
+            <button type="submit" id="submit-button"> Sign up </button>
+            <p class="form-footer">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+            </div>
+    
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="tribute"> 
+        <img src="97tribute.png" width="100px">
+        </div>
+           
+        <h3 id="footercontent">Copyright  | Terms and Conditions  | Confidentiality policy </h3>
+          
+    </footer>
+</body>
+</html>
