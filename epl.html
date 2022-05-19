@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8" /> 
     <title>Liverpool FC Romania - homepage</title>
-    <link rel="stylesheet" type="text/css" href="home.css" />
+    <link rel="stylesheet" type="text/css" href="epl.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
     </style>
-    <script src="home.js"></script>
+    
 </head>
 <body>
     
@@ -34,8 +34,51 @@
       </div>
       </div>
 
+      <div class="container">
+        <h1>Premier League 2021/2022 season</h1>
+        <h2>Upcoming Fixtures</h2>
+        <div class="fixtures">
+            <div class="match">
+              <img id="team-logo" src="logo.png">
+              <p>Liverpool - Wolves</p>
+              <img id="team-logo" src="wolves.png">
+            </div>
+        </div>
+        <h2>Past Fixtures</h2>
+        <div class="videos">
+        <div class="fixtures">
+          <div class="match">
+            <img id="team-logo" src="southhampton.png">
+            <p>Southampton 1 - 2 Liverpool</p>
+            <img id="team-logo" src="logo.png">
+          </div>
+          <div id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ANNiGOwTBOY" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <input type="button" name="highlights" value="Watch match highlights!" onclick="showDiv()">
+          <br>
+
+          <div class="match">
+            <img id="team-logo" src="villa.png">
+            <p>Aston Villa 1 - 2 Liverpool</p>
+            <img id="team-logo" src="logo.png">
+          </div>
+          <div id="video2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MBO0AiAD0DQ" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+          <input type="button" name="highlights2" value="Watch match highlights!" onclick="showDiv2()">
+        
+        </div>
+      </div>
+      </div>
       
       
+      <script src="epl.js"></script>
 
       <footer>
         <div class="tribute"> 
