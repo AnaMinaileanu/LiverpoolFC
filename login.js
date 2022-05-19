@@ -21,25 +21,26 @@ form.addEventListener('submit', (e) => {
 		}
 	});
 
-	btn.addEventListener('click', function handleClick(event) {
+    btn.addEventListener('click', function handleClick(event) {
  
-		event.preventDefault();
-	  
-		
-	  
-		inputs.forEach(input => {
-		  input.value = '';
-		});
-	  
-		successMessage.classList.add('show');
-		setTimeout("location.href = 'login.html';",5000);
-	  
-	  });
+        event.preventDefault();
+      
+        inputs.forEach(input => {
+          input.value = '';
+        });
+      
+        successMessage.classList.add('show');
+        setTimeout("location.href = 'home.html';",5000);
+      
+      });
+
 });
 
 function validateEmail(email) {
 	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(String(email).toLowerCase());
 }
+
+
 
 

@@ -10,7 +10,6 @@ body::after {
 	display: block;
 	height: 100px;
 }
-
 header> img{
 flex: 40%;
 margin-top: auto;
@@ -121,96 +120,6 @@ margin-bottom: auto;
   }
 
 
-  .forms{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        width: 100%;
-  }
-
-  .form-field{
-      font-family: 'Koulen', cursive;
-      font-size: 40px;
-      color: white;
-      text-align: center;
-      margin-top: 40px;
-  }
-  .form-radio-field{
-      display:block;
-      align-content: center;
-      justify-content: center;
-      font-family: 'Koulen', cursive;
-      font-size: 20px;
-      color: white;
-      text-align: left;
-      width: 100%;
-  }
-  .radio-container{
-      display: grid;
-      grid-template-columns: 35% 65%;
-  }
-
-  #submit-button{
-      background-color:#a32222;
-      border: none;
-      font-size: 30px;
-      color: white;
-      font-family: 'Koulen', cursive;
-      text-align: center;
-      box-shadow: 0 0 30px #C8102E;
-      
-  }
-
-  .form-footer{
-      font-size: 10px;
-  }
-
-  .warning {
-  display: none;
-	text-align: right;
-	bottom: 0;
-	right: 0;
-	font-size: 5px;
-	font-style: italic;
-	color: hsl(0, 100%, 74%);
-	font-weight: 500;
-}
-
-.success-message{
-  display: none;
-  text-align: center;
-  font-size: 30px;
-  font-family: 'Koulen', cursive;
-  color: white;
-}
-
-.show  .success-message{
-  display: block;
-}
-
-#sign-up-image{
-   width:50%;
-}
-
-.show #sign{
- display: none;
-}
-
-.form-field.error .warning {
-	display: block;
-}
-
-.form-field.error input {
-	border: 2px solid hsl(0, 100%, 74%);
-}
-
-  input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-  }
-  
   footer{
     align-items: center;
     position: absolute;
@@ -233,3 +142,79 @@ margin-bottom: auto;
     font-size: 10px;
     text-align: center;
 }
+
+.forms{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-field{
+  font-family: 'Koulen', cursive;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+#submit-button{
+  background-color:#a32222;
+  border: none;
+  font-size: 30px;
+  color: white;
+  font-family: 'Koulen', cursive;
+  text-align: center;
+  box-shadow: 0 0 30px #C8102E;
+  
+}
+
+.form-footer{
+  font-size: 10px;
+}
+
+.warning {
+display: none;
+text-align: right;
+bottom: 0;
+right: 0;
+font-size: 5px;
+font-style: italic;
+color: hsl(0, 100%, 74%);
+font-weight: 500;
+}
+
+.success-message{
+display: none;
+text-align: center;
+font-size: 30px;
+font-family: 'Koulen', cursive;
+color: white;
+}
+
+.show  .success-message{
+display: block;
+}
+
+
+
+.show #login{
+display: none;
+}
+
+.form-field.error .warning {
+display: block;
+}
+
+.form-field.error input {
+border: 2px solid hsl(0, 100%, 74%);
+}
+
+input {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+}
+

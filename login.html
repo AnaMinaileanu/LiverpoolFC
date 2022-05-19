@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" /> 
+    <title>Liverpool FC Romania - The Team</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="logonavbar">
+        <img src="favicon.ico.png" width="80" height="110">
+        <div class="navbar">
+            <a href="aboutus.html">ABOUT US</a>
+            <div class="dropdown">
+              <button class="dropbtn">FIXTURES
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">PREMIER LEAGUE</a>
+                <a href="#">CHAMPIONS LEAGUE</a>
+                <a href="#">FA CUP</a>
+                <a href="#">CARABAO CUP</a>
+              </div>
+            </div>
+            <a href="theteam.html">THE TEAM</a>
+            <a href="join.html" class="right">JOIN</a>
+            <a href="login.html" class="right">LOGIN</a>           
+        </div>
+        </div>
+
+    <div class="forms" id="yes">
+        <div class="success-message">
+            <p> You have succesfully logged in! YNWA!</p>
+        </div>
+        <form id="login">
+            <div class="form-field">
+                <label for="email">E-mail adress</label><br>
+                <input name="email" id="email" type="email" placeholder="E-mail adress">
+                <p class="warning">This isn't a viable e-mail adress.</p>
+            </div>
+            <div class="form-field">
+                <label for="password">Password</label><br>
+                <input name="password" id="password" type="password" placeholder="Password">
+                <p class="warning">This is a required field.</p>
+            </div>
+            <div class="form-field">
+                <button type="submit" id="submit-button"> Log in </button>
+            </div>
+        </form>
+    </div>
+    <script src="login.js"></script>
+    <footer>
+        <div class="tribute"> 
+        <img src="97tribute.png" width="100px">
+         </div>
+        <h3 id="footercontent">Copyright  | Terms and Conditions  | Confidentiality policy </h3>
+    </footer>
+</body>
+</html>
