@@ -186,3 +186,182 @@ header> img{
         font-size: 10px;
         text-align: center;
     }
+
+    .contact-section {
+      background: inherit;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s linear;
+      
+    }
+    
+    
+    
+    .alert {
+      margin-bottom: 1rem;
+      height: 1.25rem;
+      display: grid;
+      align-items: center;
+      text-align: center;
+      font-size: 0.7rem;
+      border-radius: 0.25rem;
+      letter-spacing: 0.25rem;
+      text-transform: capitalize;
+    }
+    
+    .alert-danger {
+      color: #721c24;
+      background: #f8d7da;
+    }
+    
+    .alert-success {
+      color: #155724;
+      background: #d4edda;
+    }
+    
+    .contact h1 {
+      color: white;
+      font-family: 'Koulen', cursive;
+      font-size: 30px;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .contact {
+      display: flex;
+      flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .form-field{
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    
+    #message {
+      padding: 0.25rem;
+      padding-left: 1rem;
+      background: white;
+      border-color: transparent;
+      font-size: 15px;
+      margin: auto;
+      text-align: center;
+      width: 50%;
+      height: 20vh;
+      
+    }
+    
+    #message::placeholder {
+      font-family: 'Koulen';
+      color: gray;
+    }
+    
+    .submit-button {
+      width: 50%;
+      background: white;
+      border-color: none;
+      display: grid;
+      align-items: center;
+      cursor: pointer;
+      content: black;
+      transition: all 0.3s linear;
+      font-size: 15px;
+      font-family: 'Koulen';
+    }
+    
+    .submit-button:hover {
+      background: #C8102E;
+      color: #fff;
+    }
+    
+    .message-container {
+    
+      margin-top: 2rem;
+      transition: all 0.3s linear;
+      visibility: hidden;
+    }
+    
+    .show-container {
+      visibility: visible;
+    }
+    
+    .message-sent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      transition: all 0.3s linear;
+     
+      border-radius: all 0.3s linear;
+      font-family: 'Koulen', cursive;
+      margin: auto;
+    }
+    
+    .message-sent:hover {
+      color: white;
+      background: gray;
+    }
+    
+    .message-sent:hover .title {
+      color: white;
+      font-family: 'Koulen', cursive;
+    }
+    
+    .title {
+      margin-bottom: 0;
+      color: hsl(209, 61%, 16%);
+      letter-spacing: 2px;
+      transition: all 0.3s linear;
+    }
+    
+    .edit-button {
+      
+      background-color: #155724;
+      cursor: pointer;
+      margin: 0 0.15rem;
+      transition: all 0.3s linear;
+      width: 5px;
+      height: 5px;
+    }
+    
+    .delete-button {
+      
+      background-color: #721c24;
+      cursor: pointer;
+      margin: 0 0.15rem;
+      width: 5px;
+      height: 5px;
+      transition: all 0.3s linear;
+    }
+    
+    .clear-button {
+      text-transform: capitalize;
+      width: 10%;
+      
+      display: grid;
+      align-items: center;
+      background-color: white;
+      border-color: none;
+      
+      margin: 0 auto;
+      font-size: 0.85rem;
+      
+      cursor: pointer;
+      transition: all 0.3s linear;
+      margin-top: 1.25rem;
+      content: black;
+      font-size: 15px;
+      font-family: 'Koulen';
+    }
+    
+    .clear-button:hover {
+      background: #C8102E;
+      color: #fff;
+    }
+    
+    
