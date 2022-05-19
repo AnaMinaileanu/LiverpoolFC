@@ -110,14 +110,25 @@ header> img{
       }
     
       @media screen and (max-width: 500px) {
-        .header a {
-          float: none;
-          display: block;
+        #logo{
+          width: 40px;
+          height: 55px;
+        }
+        .logonavbar a {
+          float: left;
+          display: flex;
+          flex-direction: row;
           text-align: left;
+          font-size: 15px;
+          padding: 15px 10px 15px 10px;
         }
-        .header-right {
-          float: none;
+        .dropdown-content{
+          font-size: 15px;
         }
+        #buttontext{
+          font-size: 15px;
+        }
+        
       }
 
       #subtitles{

@@ -11,11 +11,7 @@ display: block;
 height: 100px;
 }
 
-header> img{
-flex: 40%;
-margin-top: auto;
-margin-bottom: auto;
-}
+
 
 
 .logonavbar{
@@ -109,14 +105,49 @@ margin-bottom: auto;
     display: block;
   }
 
-  @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
+  @media screen and (max-width: 700px){
+    .trophies{
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
     }
-    .header-right {
-      float: none;
+  }
+
+  @media screen and (max-width: 500px) {
+    #logo{
+      width: 40px;
+      height: 55px;
+    }
+    .logonavbar a {
+      float: left;
+      display: flex;
+		  flex-direction: row;
+      text-align: left;
+      font-size: 15px;
+      padding: 15px 10px 15px 10px;
+    }
+    .dropdown-content{
+      font-size: 15px;
+    }
+    #buttontext{
+      font-size: 15px;
+    }
+    #title{
+      font-size: 30px;
+
+    }
+    #chant{
+      font-size: 30px;
+    }
+    .trophies{
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+    }
+    .trophy{
+      
+      align-content: center;
+      justify-content: center;
     }
   }
 
@@ -364,10 +395,13 @@ margin-bottom: auto;
 .trophy{
   display: flex;
   flex-direction: column;
+  justify-items: center;
+  align-items: center;
 }
 
 .trophy > img{
   width: 200px;
+  
 }
 
 #trophy_name{
