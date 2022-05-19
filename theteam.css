@@ -1,5 +1,14 @@
-body {
-    background-color: #C8102E;
+body{
+  background-color: #C8102E;
+  position: relative;
+  margin-bottom: 10px;
+  min-height: 100vh;
+}
+
+body::after {
+content: '';
+display: block;
+height: 100px;
 }
 
 
@@ -115,6 +124,11 @@ header> img{
 
       footer{
         align-items: center;
+        position: absolute;
+        bottom: 0;
+        z-index: inherit;
+        width: 100%;
+        margin-top: 10px;
       }
         
       .tribute{
